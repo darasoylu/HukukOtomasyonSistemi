@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    
+    <h:head>
+        <title>HUKUK OTOMASYON SİSTEMİ</title>
+        <link rel="stylesheet" href="./resources/css/loginStyle.css"></link>
+        <style>
+            .button {
+                border-radius: 20px;
+                border: none;
+                background-color: #000;
+                color: #FFFFFF;
+                font-size: 12px;
+                font-weight: bold;
+                padding: 15px 45px;
+                margin: 10px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+
+            .input {
+                background-color: #eee;
+                border-radius: 10px;
+                border: none;
+                padding: 12px 15px;
+                margin: 8px 0;
+                width: 100%;
+            }
+
+            .container {
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+                    0 10px 10px rgba(0,0,0,0.22);
+                position: relative;
+                overflow: hidden;
+                width: 800px;
+                max-width: 100%;
+                min-height: 480px;
+            }
+
+            .sign-in-container {
+                float: left;
+                width: 400px;
+                height: 100%;
+                background: #FFFFFF;
+            }
+
+            .sign-up-container {
+                float: left;
+                height: 100%;
+                width: 400px;
+                background: #FF4B2B;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h2 style="text-align: center; font-weight: bold; font-size: 50px">Hukuk Büro Otomasyonu</h2>
+        <div class="container" id="container">
+            <div class="sign-in-container">
+                <h:form>
+                    <h1 style="text-align: center; font-weight: bold; font-size: 30px">Kayıtlı Kullanıcı</h1>
+                    <h:inputText class="input" value="#{login.id}" a:placeholder="Id(Test:1)" 
+                                 required="true" requiredMessage="ID giriniz!"/>
+                    <h:inputSecret class="input" value="#{login.sifre}" a:placeholder="Şifre(Test:12345)"
+                                   required="true" requiredMessage="Şifre giriniz!"/>
+                    <h:commandButton class="button" value="Giriş Yap" action="#{login.girisYap()}"/>
+                </h:form>
+            </div>
+            <div class="sign-up-container">
+                <h:form>
+                    <h1 style="text-align: center; font-weight: bold; font-size: 30px">Yeni Kullanıcı</h1>
+                    <h:inputText class="input" value="#{login.kaydolId}" a:placeholder="Id" 
+                                 required="true" requiredMessage="ID giriniz!" />
+                    <h:inputText class="input" value="#{login.kaydolAd}" a:placeholder="Ad"
+                                 required="true" requiredMessage="Ad giriniz!"/>
+                    <h:inputSecret class="input" value="#{login.kaydolSifre}" a:placeholder="Şifre" 
+                                   required="true" requiredMessage="Şifre giriniz!" />
+                    <h:commandButton class="button" value="Kayıt Ol" action="#{login.kayıtOl()}"/>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</html>

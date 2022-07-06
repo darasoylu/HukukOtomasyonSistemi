@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+.picSlider{
+    height: 600px
+}
+.navbar-expand-lg {
+    background-color: #FF4B2B;
+}
+.navbar-expand-lg .navbar-brand,
+.navbar-expand-lg .navbar-text {
+    color: #FFFFFF;
+}
+.navbar{
+    min-height : 80px;
+}
+
+.nav-item{
+    margin-left: 10px;
+
+}
+
+.button{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+body{
+    padding-top: 30px;
+    background: #f6f5f7;
+    font-family: 'Raleway', sans-serif;
+}
+

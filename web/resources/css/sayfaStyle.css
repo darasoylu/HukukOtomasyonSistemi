@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+.picSlider{
+    height: 600px
+}
+.navbar-expand-lg {
+    background-color: #FF4B2B;
+}
+.navbar-expand-lg .navbar-brand,
+.navbar-expand-lg .navbar-text {
+    color: #FFFFFF;
+}
+.navbar{
+    min-height : 80px;
+}
+
+.nav-item{
+    margin-left: 10px;
+
+}
+
+.button{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.weight700 {
+    font-weight: bold;
+}
+
+
+.ayrac{
+    border:none;
+    border-tab :3px solid #343a40;
+    max-width: 250px;
+    margin:25px auto;
+}
+.idark{
+    color:#343a40;
+    position:relative;
+    top:-45px;
+    font-size: 25px;
+    border:10px solid #e2e2e2;
+    background-color:#e2e2e2;
+}
+.ilight{
+    color:#343a40;
+    position:relative;
+    top:-45px;
+    font-size: 25px;
+    border:10px solid #f2f2f2;
+    background-color:#f2f2f2;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+    background: #f6f5f7;
+}
+
+.text-input{
+    border:solid 1px #e0e0e0;
+}
+.asdf{
+    padding-top: 100px;
+}
+.iform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    height: 100%;
+    text-align: center;
+}
+
+
+.dataTable{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.order-table{   
+	border-collapse:collapse;
+}
+
+.order-table-header{
+	text-align:center;
+	background:none repeat scroll 0 0 #E5E5E5;
+	border-bottom:1px solid #BBBBBB;
+	padding:16px;
+}
+
+.order-table-odd-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #FFFFFFF;
+	border-top:1px solid #BBBBBB;
+}
+
+.order-table-even-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #F9F9F9;
+	border-top:1px solid #BBBBBB;
+}
+.subbutton{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:10px;
+}
+.input {
+    background-color: #eee;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
